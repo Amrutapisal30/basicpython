@@ -1,0 +1,27 @@
+ML project List-
+
+1) Taheer Tai = Fake news Prediction using ML
+2) Nupur Deshpande = Spam mail prediction using ml
+3) Tarange Supriya = Sales Prediction using ml
+4)Pushpanjali Patil = Big Mart Sales Prediction Using ML
+5)Priyanka salgar = gold price prediction using ML
+6)Arti Naikwade= House Price prediction using ml
+7) Somnath Karadkar = House Price Prediction
+8) Shivling Karadkar = Wine Quality Prediction
+9) Chetan Suryawanshi = Image Classification
+10) Suket Sonwale = Loan Approve Prediction
+11) Ajay Kale = Gold Price Prediction
+12) Aryan Waidande = Car Price Prediction
+13) Sachin Yadav = Fake News Prediction
+14) Nikhilesh Anamanla = Calories Burnt Prediction
+15) Suyash Kulkarni = Lane Detection using Ml
+16) Rutuja More = Diabetes detection
+17) Shubhangi Dhage = House Price Prediction
+18) Bhagyashree Urunkar = Heart Disease Prediction
+19) Vaishnavi Jamadar = Big Mart Sales Prediction
+20) Archana Nikam = Facial Emotion Detection and feedback system
+21) Vaishnavi Bokare = weather prediction using ML
+22] Yashwant Bhosale = Movie Recommendation system using ML
+23]Bhavarth Khairnar-Traffic Prediction System
+24]Akash gaikwad= House price prediction
+25]Satyam wani- Diabetes  Prediction System

@@ -1,0 +1,16 @@
+
+1. Basic Data Analysis
+2. Movie Ratings Analysis---- Yashwant,priyanka
+3. Sports Statistics Dashboard----------------   Sachine,bhavart
+4. Stock Price Analysis---- ankita
+5. Sales Data Analysis--- sakshi,vaishnavi,supriya
+6. Customer Segmentation
+7. Real Estate Data Analysis---- shubhangi
+8. COVID-19 Data Analysis------ suyash,bhagayshree
+9. Financial Data Analysis---- nikhilesh
+10. E-commerce Data Analysis---- arti
+11. Energy Consumption Analysis
+12. Sentiment Analysis of Product Reviews---- archana
+13. Traffic Accident Analysis----- suket,aryan
+14.Airline Data Analysis------------------ tai
+15. Custom Recommendation System----- apeksha,vaishnavi

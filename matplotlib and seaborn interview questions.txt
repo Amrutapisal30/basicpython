@@ -1,0 +1,59 @@
+📊 Matplotlib Interview Questions
+✅ Basic Questions
+1)What is Matplotlib? What are its main features?
+
+2)How do you create a simple line plot in Matplotlib?
+
+3)What is the purpose of plt.show()?
+
+4)What is the difference between plt.plot() and plt.scatter()?
+
+5)How do you label axes and add a title in a plot?
+
+🧠 Intermediate Questions
+6)What is subplots() in Matplotlib?
+
+7)How do you customize line styles, colors, and markers?
+
+8)How do you add a legend to a Matplotlib plot?
+
+9)How can you save a plot as an image file?
+
+10)What are figure and axes in Matplotlib?
+
+11)How do you control plot size and resolution?
+
+🔍 Advanced Questions
+12)How do you create a secondary Y-axis in Matplotlib?
+
+13)How do you create multiple plots (subplots) in one figure?
+
+14)What are the differences between plt.figure() and plt.subplots()?
+
+15)How would you annotate a point in the graph with a label or arrow?
+
+16)How do you use Matplotlib with Pandas or NumPy data?
+
+📈 Seaborn Interview Questions
+✅ Basic Questions
+1)What is Seaborn? How is it different from Matplotlib?
+
+2)How do you load a built-in dataset in Seaborn?
+
+3)How do you create a line plot or scatter plot using Seaborn?
+
+4)What are the default Seaborn themes?
+
+5)What is the use of the hue parameter?
+
+🧠 Intermediate Questions
+6)What are distplot(), histplot(), boxplot(), and violinplot() used for?
+
+7)What is a pairplot() and when would you use it?
+
+8)What is the difference between catplot(), boxplot(), and stripplot()?
+
+9)How do you change color palettes and themes in Seaborn?
+
+10)How does Seaborn integrate with Pandas DataFrames?
+

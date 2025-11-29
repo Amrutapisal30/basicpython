@@ -1,0 +1,93 @@
+NumPy Interview Questions
+Basic Questions
+1.	What is NumPy?
+o	Why is it used in Python?
+2.	How do you create a NumPy array?
+o	Provide examples of creating 1D, 2D, and 3D arrays.
+3.	What is the difference between Python lists and NumPy arrays?
+4.	Explain the use of numpy.arange(), numpy.linspace(), and numpy.zeros().
+5.	What are the advantages of using NumPy over regular Python lists?
+Intermediate Questions
+6.	How can you reshape a NumPy array?
+o	Explain the reshape() method with an example.
+7.	What are broadcasting and vectorization in NumPy?
+o	Explain with examples.
+8.	How can you find unique elements in a NumPy array?
+o	Example: numpy.unique().
+9.	How do you perform mathematical operations on arrays?
+o	Example: Element-wise addition, multiplication, dot product.
+10.	What is the difference between numpy.copy() and numpy.view()?
+Advanced Questions
+11.	How can you handle missing values in a NumPy array?
+12.	Explain the difference between axis=0 and axis=1.
+13.	How do you calculate statistical measures in NumPy?
+o	Example: mean(), median(), std(), var().
+14.	How can you stack and split arrays in NumPy?
+o	Functions like hstack(), vstack(), split().
+15.	What is np.meshgrid() and when would you use it?
+16.	How is memory efficiency achieved in NumPy?
+________________________________________
+Pandas Interview Questions
+Basic Questions
+1.	What is Pandas?
+o	How is it different from NumPy?
+2.	What are the primary data structures in Pandas?
+o	Explain Series and DataFrame.
+3.	How do you create a DataFrame in Pandas?
+o	Example using dictionaries, lists, or NumPy arrays.
+4.	How do you read and write data using Pandas?
+o	Methods like read_csv(), read_excel(), to_csv().
+5.	How do you select rows and columns in a DataFrame?
+o	Explain .loc[], .iloc[], and direct indexing.
+Intermediate Questions
+6.	How can you handle missing values in Pandas?
+o	Methods like dropna() and fillna().
+7.	What is the difference between apply(), map(), and applymap()?
+8.	How do you filter data in a DataFrame?
+o	Example: Filtering rows based on conditions.
+9.	How can you group and aggregate data in Pandas?
+o	Use of groupby(), agg().
+10.	What is the difference between merge(), join(), and concat()?
+Advanced Questions
+11.	What are MultiIndex and Hierarchical Indexing in Pandas?
+12.	How do you pivot and unpivot a DataFrame?
+o	Methods like pivot(), melt().
+13.	How can you optimize the performance of Pandas operations?
+o	Example: Using categorical data or vectorized operations.
+14.	Explain the difference between pd.Series.map() and pd.Series.replace().
+15.	How do you perform time-series analysis in Pandas?
+o	Functions like pd.to_datetime(), resample().
+16.	What are the differences between shallow and deep copies in Pandas?
+________________________________________
+Scenario-Based Questions
+1.	You have a dataset with millions of rows. How would you handle memory management in Pandas?
+o	Suggest methods like chunking or using dtypes optimization.
+2.	How would you find duplicate rows in a DataFrame?
+o	Example: Using duplicated() or drop_duplicates().
+3.	Given two DataFrames, how would you perform an inner, outer, left, and right join?
+o	Explain with the merge() function.
+4.	How can you rank rows in a DataFrame?
+o	Use the rank() method.
+________________________________________
+Code Challenges
+1.	Write a NumPy code to normalize an array.
+python
+Copy code
+arr = np.array([1, 2, 3, 4, 5])
+normalized = (arr - arr.min()) / (arr.max() - arr.min())
+print(normalized)
+2.	Write a Pandas code to calculate the percentage change for a given column in a DataFrame.
+python
+Copy code
+df['pct_change'] = df['column'].pct_change()
+3.	Flatten a 2D NumPy array into a 1D array.
+python
+Copy code
+arr = np.array([[1, 2], [3, 4]])
+flattened = arr.flatten()
+4.	Group a DataFrame by a column and calculate the mean of another column.
+python
+Copy code
+grouped_mean = df.groupby('group_column')['value_column'].mean()
+print(grouped_mean)
+

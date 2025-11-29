@@ -1,0 +1,179 @@
+✅ 1. What is Matplotlib?
+Answer:
+Matplotlib is a Python 2D plotting library used for creating static, animated, and interactive visualizations. It is especially good for creating basic plots like line charts, bar charts, histograms, and scatter plots.
+
+✅ 2. How do you create a simple line plot in Matplotlib?
+Answer:
+
+python
+Copy
+Edit
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.title("Simple Line Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+✅ 3. What is the purpose of plt.show()?
+Answer:
+plt.show() renders and displays the current figure or plot. It is necessary when running scripts (outside of Jupyter) to actually see the output.
+
+✅ 4. How do you label axes and add a title to a plot?
+Answer:
+
+python
+
+plt.xlabel("Time (s)")
+plt.ylabel("Speed (m/s)")
+plt.title("Speed vs Time")
+✅ 5. How do you add a legend to a plot?
+Answer:
+
+python
+
+plt.plot(x, y, label="Speed")
+plt.legend()
+The label parameter is used inside plot() and plt.legend() displays it.
+
+✅ 6. What is the difference between plt.plot() and plt.scatter()?
+Answer:
+
+plt.plot() connects points with lines.
+
+plt.scatter() creates a scatter plot with individual points (no lines).
+
+✅ 7. How can you save a Matplotlib plot to a file?
+Answer:
+
+python
+
+plt.savefig("plot.png", dpi=300)
+Saves the current figure to an image file with specified resolution (DPI).
+
+✅ 8. How do you create subplots in Matplotlib?
+Answer:
+
+python
+
+fig, axes = plt.subplots(1, 2)  # 1 row, 2 columns
+axes[0].plot(x, y)
+axes[1].scatter(x, y)
+✅ 9. What are figure and axes in Matplotlib?
+Answer:
+
+Figure: The entire window or page on which the plots appear.
+
+Axes: The individual plots or graphs on the figure (you can have multiple).
+
+✅ 10. How do you customize line styles and colors?
+Answer:
+
+python
+
+plt.plot(x, y, color='green', linestyle='--', marker='o')
+color: changes line color
+
+linestyle: changes to dashed (--)
+
+marker: adds circle markers at data points
+====================
+seaborn 
+✅ 1. What is Seaborn and how is it different from Matplotlib?
+Answer:
+Seaborn is a high-level Python visualization library built on top of Matplotlib. It provides more attractive and informative statistical graphics with less code and better default styles.
+
+📌 Key Differences:
+
+Seaborn supports complex plots (e.g. boxplots, violin plots) easily.
+
+Seaborn integrates better with pandas DataFrames.
+
+Seaborn has built-in themes and color palettes.
+
+✅ 2. How do you load a dataset in Seaborn?
+Answer:
+Seaborn includes built-in sample datasets:
+
+python
+Copy
+Edit
+import seaborn as sns
+df = sns.load_dataset('tips')
+✅ 3. How do you create a line plot or scatter plot in Seaborn?
+Answer:
+
+python
+Copy
+Edit
+# Line plot
+sns.lineplot(x='total_bill', y='tip', data=df)
+
+# Scatter plot
+sns.scatterplot(x='total_bill', y='tip', data=df)
+✅ 4. What is the use of the hue parameter?
+Answer:
+hue is used to group data points by a categorical variable and display them in different colors.
+
+python
+Copy
+Edit
+sns.scatterplot(x='total_bill', y='tip', hue='sex', data=df)
+✅ 5. How do you visualize the distribution of a variable?
+Answer:
+
+python
+Copy
+Edit
+sns.histplot(data=df, x='total_bill', kde=True)  # Histogram with KDE
+sns.boxplot(x='day', y='total_bill', data=df)    # Boxplot by day
+sns.violinplot(x='day', y='total_bill', data=df) # Violin plot
+✅ 6. What is a pairplot() and when is it used?
+Answer:
+pairplot() creates a matrix of scatter plots for all numeric variables in the DataFrame, useful for exploring relationships and distributions.
+
+python
+Copy
+Edit
+sns.pairplot(df, hue='sex')
+✅ 7. What is a catplot() and how is it different from boxplot()?
+Answer:
+catplot() is a versatile categorical plotting function that can create different plot types like strip, box, violin, etc., based on the kind parameter.
+
+python
+Copy
+Edit
+sns.catplot(x='day', y='total_bill', kind='box', data=df)
+✅ 8. How do you create a correlation heatmap in Seaborn?
+Answer:
+
+python
+Copy
+Edit
+import matplotlib.pyplot as plt
+
+corr = df.corr(numeric_only=True)
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+plt.title("Correlation Heatmap")
+plt.show()
+✅ 9. How do you customize the theme and color palette in Seaborn?
+Answer:
+
+python
+Copy
+Edit
+sns.set_style("whitegrid")  # or darkgrid, ticks, white, dark
+sns.set_palette("pastel")   # or deep, muted, bright, etc.
+✅ 10. What is a FacetGrid and how is it used?
+Answer:
+FacetGrid lets you create a grid of subplots based on one or more categorical variables.
+
+python
+Copy
+Edit
+g = sns.FacetGrid(df, col="sex", row="time")
+g.map(sns.scatterplot, "total_bill", "tip")
+===============================

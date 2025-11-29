@@ -1,0 +1,44 @@
+import seaborn as sns
+
+sns.get_dataset_names()
+
+df=sns.load_dataset("titanic")
+df
+
+# scatter plot
+sns.scatterplot(x="age",y="fare",data=df)
+
+sns.scatterplot(x="age",y="fare",data=df,palette=["red","green","black"],hue="class",size="pclass")
+
+sns.histplot(df['age'],kde=False,bins=5)#kde --smoothness probablity function T/F shows line
+
+sns.displot(df["age"],bins=15,kde=True)
+
+sns.boxplot(x=df['pclass'],y=df['fare'],palette=['red','green'])
+
+sns.boxplot(x=df['pclass'],y=df['fare'],palette=['red','green'],hue=df['sex'])
+
+sns.violinplot(x=df['pclass'],y=df['fare'],palette=['red','green'],hue=df['sex'])
+
+sns.stripplot(x=df['pclass'],y=df['fare'],palette=['red','green'],hue=df['sex'])
+==================
+Iris file
+
+import seaborn as sns
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv("Iris_missingdata_lyst1732876022563.csv")
+
+# Use the DataFrame for visualization
+# sns.pairplot(df)  # Example of using the DataFrame with Seaborn
+
+sns.scatterplot(x='SepalLengthCm',y='SepalWidthCm',data=df)
+
+sns.scatterplot(x=df['SepalLengthCm'],y=df['SepalWidthCm'],data=df,palette=["red","green"],hue='PetalLengthCm',size='PetalWidthCm')
+
+sns.histplot(df['SepalLengthCm'],kde=True,bins=10)
+
+sns.displot(df["SepalLengthCm"],bins=15,kde=True)
+
+sns.boxplot(x=df['SepalLengthCm'],y=df['SepalWidthCm'],palette=['red','green'])

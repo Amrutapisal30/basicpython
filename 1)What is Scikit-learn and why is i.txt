@@ -1,0 +1,50 @@
+1)What is Scikit-learn and why is it used?
+
+Answer: Scikit-learn is an open-source Python library that provides simple and efficient tools for data mining and data analysis. It includes a wide range of algorithms for classification, regression, clustering, dimensionality reduction, and model evaluation.
+
+2)What are the main steps involved in applying Scikit-learn for a machine learning task?
+
+Answer:
+
+Load data (using Pandas, NumPy, or built-in datasets in Scikit-learn).
+
+Preprocess the data (e.g., missing values, scaling, encoding).
+
+Split the data into training and testing sets using train_test_split().
+
+Choose an appropriate model (e.g., RandomForestClassifier, LinearRegression).
+
+Train the model with model.fit().
+
+Evaluate the model using metrics like accuracy, precision, recall, etc.
+
+Tune hyperparameters with grid search or random search.
+
+3)What is the difference between fit() and predict() in Scikit-learn?
+
+Answer:
+
+fit(): Trains the model on the training data.
+
+predict(): Makes predictions on new, unseen data after the model is trained.
+
+
+5)What is train_test_split() used for in Scikit-learn?
+
+Answer: train_test_split() is used to split data into training and testing sets. It helps in assessing how well the model generalizes to unseen data.
+
+python
+Copy
+Edit
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+==================
+What is machine learning?
+
+What is the difference between AI, ML, and deep learning?
+
+What is the difference between supervised and unsupervised learning?
+What is Life cycle of ML
+What is difference between regression and classification
+What is Application of AI?
+===========
