@@ -1,4 +1,5 @@
-name,age,city,marks
-"john", ,"pune",34
-"blake",45, ,67
-"martin",26,"city",78
+,name,department,salary
+0,sachin,it,1000
+1,rahul,it,2000
+2,virendra,comp,3000
+3,sourav,comp,4000

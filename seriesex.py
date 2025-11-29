@@ -1,11 +1,12 @@
-import pandas
-p=pandas.Series(["john","blake","martin"])
-print(p)
-print(p[0])# john
-print(p[2])#martin
-
-data=pandas.Series(["john","blake","martin"],index=["a","b","c"])
+#1D array -  Series() - data structure
+import pandas as pd
+data=pd.Series(["john","blake","martin","tiger"])
 print(data)
-print(data['a']) #john
-print(data['b'])#blake
-print(data['c'])#martin
+print(data[1]) #blake
+print(data[3])#tiger
+
+
+s=pd.Series(['harsh','aryan','nikhil'],index=['first','second','third'])
+print(s)
+print(s['second'])#aryan
+print(s['third'])#nikhil
