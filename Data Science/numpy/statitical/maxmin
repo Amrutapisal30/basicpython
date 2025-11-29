@@ -1,0 +1,19 @@
+
+# In a two-dimensional vector, the elements of axis 0 are rows and the elements of axis 1 are columns.
+
+import numpy as np  
+  
+a = np.array([[2,10,20],[80,43,31],[22,43,10]])  
+  
+print("The original array:\n")  
+print(a)  
+  
+  
+print("\nThe minimum element among the array:",np.min(a))  
+print("The maximum element among the array:",np.max(a))  
+  
+print("\nThe minimum element among the rows of array",np.min(a,0))  
+print("The maximum element among the rows of array",np.max(a,0))  
+  
+print("\nThe minimum element among the columns of array",np.min(a,1))  
+print("The maximum element among the columns of array",np.max(a,1))  

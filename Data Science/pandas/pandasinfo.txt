@@ -1,0 +1,24 @@
+Data clean , ananlysis is done by pandas
+
+pandas can remove duplicate records
+
+It takes data and assign label 
+
+p=pandas.Series(["raj","laxman"])
+
+0 raj
+1 laxman
+
+print(p[1]) # laxman
+
+
+p=pandas.Series(["raj","laxman"],index=['a','b'])
+
+a  raj
+b  laxman
+
+print(p['b'])// laxman
+
+
+
+
